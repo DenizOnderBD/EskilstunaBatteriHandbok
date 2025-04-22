@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Batteri Handbok Interactive Checklist</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Batteri Handbok Interactive Checklist</h1>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar for quick chapter navigation -->
+    <div class="sidebar">
+      <h3>Chapters</h3>
+      <ul id="chapterList">
+        <li data-target="chapter1">1. Introduction: Why Energy Storage?</li>
+        <li data-target="chapter2">2. Product Choice</li>
+        <li data-target="chapter3">3. Battery Management System (BMS)</li>
+        <li data-target="chapter4">4. Fire Protection</li>
+        <li data-target="chapter5">5. Installation: Practical Plan</li>
+        <li data-target="chapter6">6. Testing and Quality Assurance</li>
+        <li data-target="chapter7">7. Service and Maintenance</li>
+        <li data-target="chapter8">8. Lessons from Battery Owners</li>
+      </ul>
+    </div>
+
+    <!-- Main content with chapters and checklists -->
+    <div class="content">
+      <!-- Chapter 1 -->
+      <div class="chapter" id="chapter1">
+        <div class="chapter-header">1. Introduction: Why Energy Storage?</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="1-1"> <label for="1-1">What is a battery?</label>
+            <div class="dropdown-content"><p> battery is good </p></div></li>
+            <li><input type="checkbox" id="1-2"> <label for="1-2">Overview of battery technology (chemistry, charging/discharging, capacity)</label></li>
+            <li><input type="checkbox" id="1-3"> <label for="1-3">Importance of energy storage: efficiency, cost savings, reliability</label></li>
+            <li><input type="checkbox" id="1-4"> <label for="1-4">Key usage areas (arbitrage, peak shaving, frequency control, local markets, backup power)</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 2 -->
+      <div class="chapter" id="chapter2">
+        <div class="chapter-header">2. Product Choice</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="2-1"> <label for="2-1">Battery chemistry and energy density</label></li>
+            <li><input type="checkbox" id="2-2"> <label for="2-2">Cycle life and performance requirements (e.g., 5000 cycles at 20% capacity)</label></li>
+            <li><input type="checkbox" id="2-3"> <label for="2-3">Modular design and scalability for future expansion</label></li>
+            <li><input type="checkbox" id="2-4"> <label for="2-4">Certification, testing standards (UL, CE), and safety tests</label></li>
+            <li><input type="checkbox" id="2-5"> <label for="2-5">Environmental and placement requirements</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 3 -->
+      <div class="chapter" id="chapter3">
+        <div class="chapter-header">3. Battery Management System (BMS)</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="3-1"> <label for="3-1">Monitoring of cell and module voltages and temperatures</label></li>
+            <li><input type="checkbox" id="3-2"> <label for="3-2">Short-circuit and fault detection</label></li>
+            <li><input type="checkbox" id="3-3"> <label for="3-3">Alarm systems and communication with central monitoring</label></li>
+            <li><input type="checkbox" id="3-4"> <label for="3-4">Automatic shutdown features for safety</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 4 -->
+      <div class="chapter" id="chapter4">
+        <div class="chapter-header">4. Fire Protection</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="4-1"> <label for="4-1">Proper placement of storage: separate room or container</label></li>
+            <li><input type="checkbox" id="4-2"> <label for="4-2">Fire-resistant construction and enclosure requirements</label></li>
+            <li><input type="checkbox" id="4-3"> <label for="4-3">Compliance with fire safety ratings (e.g., EI60)</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 5 -->
+      <div class="chapter" id="chapter5">
+        <div class="chapter-header">5. Installation: Practical Plan</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="5-1"> <label for="5-1">Site surveying and inventory (space, vibrations, electromagnetic disturbances)</label></li>
+            <li><input type="checkbox" id="5-2"> <label for="5-2">Logistics and preparation for large or heavy components</label></li>
+            <li><input type="checkbox" id="5-3"> <label for="5-3">Cable routing, conduit installation, and environmental adaptations</label></li>
+            <li><input type="checkbox" id="5-4"> <label for="5-4">Commissioning and system testing procedures</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 6 -->
+      <div class="chapter" id="chapter6">
+        <div class="chapter-header">6. Testing and Quality Assurance</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="6-1"> <label for="6-1">Isolation and continuity testing</label></li>
+            <li><input type="checkbox" id="6-2"> <label for="6-2">Comprehensive system function testing (charging, discharging, BMS signals)</label></li>
+            <li><input type="checkbox" id="6-3"> <label for="6-3">Detailed documentation of test results</label></li>
+            <li><input type="checkbox" id="6-4"> <label for="6-4">Training and education for operating personnel</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 7 -->
+      <div class="chapter" id="chapter7">
+        <div class="chapter-header">7. Service and Maintenance</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="7-1"> <label for="7-1">Service agreements and coverage details</label></li>
+            <li><input type="checkbox" id="7-2"> <label for="7-2">Cost-benefit analysis of maintenance plans</label></li>
+            <li><input type="checkbox" id="7-3"> <label for="7-3">Identification of hidden costs and fee structures</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 8 -->
+      <div class="chapter" id="chapter8">
+        <div class="chapter-header">8. Lessons from Battery Owners</div>
+        <div class="chapter-content">
+          <ul>
+            <li><input type="checkbox" id="8-1"> <label for="8-1">Communication breakdowns and delays</label></li>
+            <li><input type="checkbox" id="8-2"> <label for="8-2">Design and construction errors (e.g., repeated concrete pours)</label></li>
+            <li><input type="checkbox" id="8-3"> <label for="8-3">Unclear responsibilities and cost allocation</label></li>
+            <li><input type="checkbox" id="8-4"> <label for="8-4">Overpromising performance and hidden fees</label></li>
+            <li><input type="checkbox" id="8-5"> <label for="8-5">Service contract pitfalls and mandatory agreements</label></li>
+            <li><input type="checkbox" id="8-6"> <label for="8-6">Building trust through clear communication</label></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
