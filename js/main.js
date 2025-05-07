@@ -29,3 +29,14 @@ checkboxes.forEach(checkbox => {
     localStorage.setItem(checkbox.id, checkbox.checked);
   });
 });
+
+// Gör varje dropdown-label klickbar och togglar sitt .dropdown-content
+document.querySelectorAll('.dropdown-label').forEach(label => {
+  label.addEventListener('click', () => {
+    const content = label.nextElementSibling;
+    if (content && content.classList.contains('dropdown-content')) {
+      // växla mellan synlig / dold
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
