@@ -41,7 +41,7 @@
             <div class="chapter-content">
               <p>Arbitrage innebär att köpa och sälja el under olika prisnivåer för att utnyttja prisskillnader. Eskilstuna, som ligger i elområde 3, upplever relativt höga prisskillnader jämfört med elområde 1 och 2.</p>
               <p>Under 2025 har den genomsnittliga prisskillnaden varit nästan 1 kr/kWh (0,97 kr/kWh). År 2024 låg den på cirka 60 öre/kWh per dag, medan 2022 uppvisade en genomsnittlig spridning på 1,99 kr/kWh per dag.</p>
-              <p>Detta kan låta lockande, men det bör noteras att sådan användning generellt ger 3–7 % avkastning på investeringen (ROI).</p>
+              <p>Att ta vara på dessa prisskillnader kan låta lockande, men det bör noteras att sådan användning generellt resulterar i 3–7 % avkastning på investeringen (ROI).</p>
               <p><strong>Exempel:</strong> Med ett 100 kWh-batteri som cyklas en gång per dag under 2022, kunde 65 000 kr ha genererats, varav cirka 3 000 kr går förlorade på verkningsgrad. Cykelkostnader kan dock utgöra över hälften av intäkterna beroende på inköpspris för batteriet.</p>
 
               <!-- Checklista för arbitrage -->
@@ -49,7 +49,7 @@
                 <div class="chapter-header">Checklista för arbitrage</div>
                 <div class="chapter-content">
                   <ul>
-                    <li><input type="checkbox" id="arb-1"><label for="arb-1">Har användaren rörligt elpris?</label></li>
+                    <li><input type="checkbox" id="arb-1"><label for="arb-1">Har användaren timvis elpris? OBS om kunden inte har timvis elpris är arbitrage inte aktuellt</label></li>
                     <li><input type="checkbox" id="arb-2"><label for="arb-2">Kan batteriet läsa av elpriset och automatiskt bestämma inköpstidpunkt?</label></li>
                     <li><input type="checkbox" id="arb-3"><label for="arb-3">Har användaren förstått att såld el kostar mindre än köpt el pga skatter och avgifter, därmed arbitrage bör göras på minska egenanvänd el?</label></li>
                   </ul>
@@ -75,7 +75,7 @@
                   <ul>
                     <li><input type="checkbox" id="ps-1"><label for="ps-1">Är effekttopparnas kostnader utredda? Är de betydande?</label></li>
                     <li><input type="checkbox" id="ps-2"><label for="ps-2">Vet användaren att batteriet inte får misslyckas med att kapa toppen – då får man ändå betala för laddningen?</label></li>
-                    <li><input type="checkbox" id="ps-3"><label for="ps-3">Är användaren medveten om att batteriet inte samtidigt kan skapa värde på andra sätt vid peak shaving?</label></li>
+                    <li><input type="checkbox" id="ps-3"><label for="ps-3">Är användaren medveten om att oftast batteriet inte samtidigt kan skapa värde på andra sätt vid peak shaving?</label></li>
                   </ul>
                 </div>
               </div>
@@ -87,7 +87,7 @@
             <div class="chapter-header">1.3 Reservkraft</div>
             <div class="chapter-content">
               <p>Reservkarft är en mycket attraktiv användningsområde för batterier. Många batterier har tillräckligt snabb reaktionstid för att fungera som UPS vid strömavbrott.</p>
-              <p>Det kräver dock noggrann styrning och att batteriet inte är urladdat vid avbrott, vilket betyder att viss kapacitet måste reserveras.</p>
+              <p>Det kräver dock noggrann styrning och att batteriet inte är urladdat vid avbrott, vilket betyder att viss kapacitet kan behöva reserveras.</p>
               <p>Off-grid-system kan också drabbas av kraft kvalitetsproblem, vilket kan skada utrustning. Det är också viktigt att förstå hur byggnadens elsystem är uppbyggt.</p>
               <p><strong>Exempel:</strong> En byggnad med 1 MW elförbrukning kan inte få nödkraft från ett 500 kW-batteri om inte elsystemet är uppdelat i ställverk där den del som ska skyddas är &lt;500 kW. Om så inte är fallet, krävs omfattande elarbeten.</p>
 
@@ -112,9 +112,11 @@
           <div class="chapter" id="chapter1-4">
             <div class="chapter-header">1.4 Stödtjänster</div>
             <div class="chapter-content">
-              <p>De senaste åren har stödtjänster vuxit kraftigt. Dessa marknader betalar för att batterier står redo (kapacitet), vilket innebär mycket mindre cykling.</p>
-              <p>Marknader som FCR har varit lönsamma men riskerar att bli mättade när tillgången (batterier) överskrider behovet med 20–40 %, vilket leder till sjunkande lönsamhet.</p>
-              <p>Det är viktigt att känna till att det finns flera olika typer av stödtjänster, och att vissa av dessa – i synnerhet FCR-N och mFRR – kräver höga effekter vid in- och utmatning. 
+              <p>De senaste åren har sett både uppgången och nedgången för stödtjänster. Stödtjänster som FCR är kapacitetsmarknader, vilket innebär att man får betalt för att hålla en viss kapacitet redo, 
+                snarare än för faktisk användning. Det gör att batteriet slits mindre jämfört med användningsområden som arbitrage eller effekttoppkapning. När detta kombinerades med mycket höga intäkter var det inte svårt att förstå varför så många ville investera i batterier.</p>
+              <p>Men marknaden blir mättad när den totala batterikapaciteten som är ansluten och erbjuder stödtjänster når ungefär 1,2–1,5 gånger marknadens faktiska behov. 
+                Detta leder i sin tur till att intäkterna pressas nedåt och marknaden balanseras med andra användningsområden för batterier. Dit är vi med stor sannolikhet också på väg.</p>
+              <p>Det är viktigt att känna till att det finns flera olika typer av stödtjänster, och att vissa av dessa, nämligen FCR-N och mFRR, kräver höga mängder av el in- och utmatning. 
                 Detta innebär att aktivering av sådana tjänster kan leda till toppar i effekttaxan, eller högre elräkningar på grund av prisskillnader.</p>
               <p>Stödtjänster resulterar idag ca 5–15 % ROI.</p>
 
@@ -123,9 +125,26 @@
                 <div class="chapter-header">Checklista för stödtjänster</div>
                 <div class="chapter-content">
                   <ul>
-                    <li><input type="checkbox" id="st-1"><label for="st-1">Är användaren medveten om starkt fluktuerande priser?</label></li>
-                    <li><input type="checkbox" id="st-2"><label for="st-2">Vet användaren vad aggregatorn tar i avgift?</label></li>
-                    <li><input type="checkbox" id="st-3"><label for="st-3">Är användaren medveten om att man förlorar styrning över batteriet?</label></li>
+                    <li>
+                      <input type="checkbox" id="st-1">
+                      <label for="st-1">Är användaren medveten om de kraftigt varierande priserna?</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="st-2">
+                      <label for="st-2">Är användaren medveten om aggregatörens avgift?</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="st-3">
+                      <label for="st-3">Är användaren medveten om att de förlorar kontrollen över batteriet för andra användningsområden?</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="st-4">
+                      <label for="st-4">Är användaren medveten om de olika typerna av marknader och vad de innebär för batteriets användning och slitage?</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="st-5">
+                      <label for="st-5">Har användaren fått information om tidslinjen och eventuella begränsningar för att kunna leverera sådana tjänster till elnätet?</label>
+                    </li>
                   </ul>
                 </div>
               </div>
